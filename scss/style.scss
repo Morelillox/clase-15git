@@ -1,0 +1,93 @@
+
+@import "../scss/base/botones";
+@import "../scss/base/textos";
+@import "../scss/base/listas";
+@import "../scss/base/imagenes";
+@import "../scss/base/colores";
+@import "../scss/componentes/promos";
+@import "../scss/componentes/contacto";
+@import "../scss/componentes/mimix";
+@import "../scss/componentes/trabaja";
+
+
+
+/* DETALLES GENERALES */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+/*  color base fondo : #ffe6d4
+    color letras : maroon
+    amarillo y negro para botones activos
+    celeste para botones
+         */
+
+html{
+    font-size: 25px;   
+
+}
+
+
+/* titulo escondido H1 solo para posicionamiento */
+.titulomaster{
+    visibility: hidden;
+}
+
+   /*Media Querry*/
+
+   /*Mobile*/
+   @media only screen and (max-width: 400px){
+    .parrafo1{
+        color: #000000;
+        background-color: #faef20;
+ 
+    }
+
+    img{
+       
+        height: 50%;
+    }
+
+
+    
+
+    .titulogdm{
+        font-size: 30px;
+    }
+
+    .mensajeWpp{
+        width: 10%;
+    }
+
+
+}
+
+
+
+   /*Tablet*/
+   @media only screen and (min-width: 401px) and (max-width: 900px){
+     .parrafo1{
+         color: #000000;
+         background-color:pink;
+  
+     }
+
+     img{
+        
+         height: 70%;
+     }
+
+     .titulogdm{
+         font-size: 50px;
+     }
+
+     .mensajeWpp{
+         width: 30%;
+     }
+
+
+ }

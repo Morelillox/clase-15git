@@ -1,0 +1,117 @@
+$ancho:100%;
+
+.secttion {
+    width: $ancho;
+
+    .img-1{
+        width: $ancho /2;
+    }
+
+    img-2{
+        width: $ancho /20;
+    }
+}
+
+/* banners y separadores */
+.banners{
+    image-orientation: unset;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffe6d4;
+
+}
+
+/* Fotos de la Guerrera del Mes */
+.fotogdm{
+    border-radius: 70px;
+    transition: all 1.5s linear;
+    filter: grayscale(1);
+    height: 400px;
+  
+}
+
+.fotogdm:hover{
+        filter: grayscale(0);
+        transform: scale(1.5);
+        position: relative;
+        z-index: 1;
+        
+}
+
+/* instagram */
+
+.instagram:hover{
+    transform: scale(2);
+    position: relative;
+    transition: all 0.8s;
+   
+}
+
+/* mapa */
+.donde-estamos{
+    transition: ease-in;
+    border-radius: 50px;
+
+
+}
+
+ /* imagenes del grid */
+ .imgmenuc{
+    filter:grayscale(1);
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.imgmenuc:hover{
+    filter: grayscale(0);
+    transform:scale(1.5);
+       
+}
+
+.sectionmc{
+    display: inline-block;
+    justify-content: center;
+}
+
+/* 1 */
+.gridmc{
+    width: 900px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr; 
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 100px;
+    grid-template-areas:
+    "picmc pmc boton"; 
+}
+
+.picmc{
+    grid-area: picmc;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    width: 100%;
+    height: 150px;
+    display: flex; 
+}
+
+.pmc{
+    text-align: left;
+    font-family: 'Kalam', cursive;
+    font-size: 0.7em;
+    color: maroon;
+    font-weight: 700;
+    grid-area: pmc;
+}
+
+

@@ -1,0 +1,82 @@
+/*  
+
+/* mixin */
+@mixin boton{
+    font-size: 22em;
+    border: 2px solid skyblue;
+    margin: 0;
+}
+
+.button{
+    @include boton;
+}
+
+/*parametros en mixin*/
+
+@mixin encabezados ($color) {
+    font-size: 2em;
+    border: 4px solid skyblue;
+    margin: 15px;
+    color: $color;
+}
+
+h2{
+    @include encabezados(black)
+}
+
+h3{
+    @include encabezados(white)
+}
+
+/* Mi futuro mix*/
+
+@mixin pichocha ($color, $padding, $font-size) {
+    font-size: $font-size;
+    color: $color;
+    background-color: blue;
+    padding: $padding;
+}
+
+.boton-1{
+    @include pichocha(yellow, 20px , 1rem)
+}
+
+@mixin prefijos ($propiedad) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+
+.magic{
+    @include prefijos(translate(50%))
+}
+
+
+
+a{
+    color: $color-base;
+
+    &:hover{
+        color:green;
+    }
+}
+
+/* conditions */
+@mixin condicion ($colorif) {
+    background-color: $colorif;
+
+    @if $colorif == orange {
+        border: 1px solid black;
+    } @else {
+        border: 4px dotted magenta;
+    }
+}
+
+.bg-condition{
+    @include condicion(orange)
+}
+
+.bg-footer{
+    @include condicion(green)
+}

@@ -1,0 +1,57 @@
+/* extends % place holder*/
+%texto{
+    margin: 5px;
+    font-family: 'Kalam', cursive;
+    color: maroon;
+    }
+
+.menu {
+    margin: 5px;
+    font-family: 'Kalam', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.comentarios{
+    @extend %texto;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+ /*  TITULOS - abarca todos los titulos actuales y futuros */
+ .titulo {
+    @extend %texto;
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* parrafos para todos */
+.parrafos{
+    @extend %texto;
+    text-align: left;
+    font-size: 0.7em;
+    font-weight: 700;
+    padding: 20px;
+    
+}
+
+/* mapa */
+.dondestamos {
+    @extend %texto;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+ }

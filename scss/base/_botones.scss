@@ -1,0 +1,102 @@
+/* Botones con Hover */
+
+.boton {
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    display: inline;
+    list-style-type: none;
+    
+    border-top: 1px solid #63c3ff;
+    background: #59b5f2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#14a1ff), to(#59b5f2));
+    background: -webkit-linear-gradient(top, #14a1ff, #59b5f2);
+    background: -moz-linear-gradient(top, #14a1ff, #59b5f2);
+    background: -ms-linear-gradient(top, #14a1ff, #59b5f2);
+    background: -o-linear-gradient(top, #14a1ff, #59b5f2);
+    padding: 6.5px 13px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline;
+    }
+    
+    .boton:hover{
+    border-top-color: #faef20;
+    background: #faef20;
+    color: #000000;
+    }
+    
+    
+    
+    .boton:active {
+    border-top-color: #0099ff;
+    background: #0099ff;
+    }
+
+ /*WHATZAP logo wpp para pedidos */
+ 
+ .mensajeWpp {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 0.6em;
+    color: maroon;
+    text-align: right;
+
+}
+
+/*estrellas valoracion*/
+
+:root {
+    --color-inactivo: #5f5050;
+    --color-hover: #ffa400;
+}
+.valoracion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    transform: scale(3);
+}
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+}
+.valoracion button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(1):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
