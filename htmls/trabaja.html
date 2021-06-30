@@ -67,7 +67,7 @@
 
 
 <section class="container">
- <form name='formulario' class="contact_form container" id='formulario' method='post' action='assets/enviar_email.php' enctype="multipart/form-data">
+ <form name="contacto" class="contact_form container" id="formulario" method="post" action="../enviar.php" >
   <div>
       <ul>
       <li>
@@ -77,38 +77,38 @@
 
 
   <li>
-      <label for="name">Nombre:</label>
+      <label for="Nombre">Nombre:</label>
       <input type='text' name='Nombre' id='Nombre' placeholder="Nombre" required>
       <span class="form_hint">Formato correcto: "Nombre (s)"</span>
   </li>
   <li>
-      <label for="apellidos">Apellidos:</label>
+      <label for="Apellidos">Apellidos:</label>
       <input type='text' name='Apellidos' id='Apellidos' placeholder="Apellidos" required>
       <span class="form_hint">Formato correcto: "Apellidos"</span>
   </li>
   <li>
-  <label for="telefono">Teléfono:</label>
+  <label for="Telefono">Teléfono:</label>
   <input type='text' name='Telefono' id='Telefono' placeholder="Teléfono" required>
   <span class="form_hint">Formato correcto: "09X XXX XXX"</span>
   </li>
   <li>
-      <label for="email">E-mail:</label>
-      <input type='text' name='E-mail' id='E-mail' placeholder="tu@correo.com" required>
+      <label for="mail">E-mail:</label>
+      <input type="email" name="mail" id="mail" placeholder="tu@correo.com" required>
       <span class="form_hint">Formato correcto: "ejemplo@hotmail.com"</span>
   </li>
   <li>
           <label for="message">Mensaje:</label>
-          <textarea name="mensaje" cols="40" rows="6" placeholder="Ingresa un mensaje (opcional)"></textarea>
+          <textarea name="mensaje" id="message" cols="40" rows="6" placeholder="Ingresa un mensaje (opcional)"></textarea>
           <span class="form_hint">Ingresar información adicional</span>
 
       </li>
   <li>
-      <label for="adjuntar archivo">Adjuntar Curriculum:</label>
-      <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher" required>
+      <label for="archivoadjunto">Adjuntar Curriculum:</label>
+      <input type='file' name='archivoadjunto' id="archivoadjunto" placeholder="carga tu CV" required>
   </li>
   <li>
-      <button class="submit boton" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
-      <button class="submit boton" type='reset' value='Reiniiar formulario'>Borrar Datos</button>
+      <button class="submit boton" type='submit' value="enviar">Enviar Mensaje</button>
+      <button class="submit boton" type='reset' value="reiniciar">Borrar Datos</button>
 
   </li>
   </ul>
